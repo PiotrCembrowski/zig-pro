@@ -50,3 +50,8 @@ const TileTextureWidth = 256 * TileWidth;
 const TileTextureHeight = TileHeight + SpriteHeight;
 const NumSprites = 8;
 const MaxVertices = ((DisplayTilesX * DisplayTilesY) + NumSprites + NumDebugMarkers) * 6;
+
+// sound system constants
+const NumVoices = 3;
+const NumSounds = 3;
+const NumSamples = 128;
