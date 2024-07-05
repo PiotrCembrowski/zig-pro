@@ -111,3 +111,10 @@ const ColorCodeGalaxian = 0x09;
 const ColorCodeKey = 0x16;
 const ColorCodeWhiteBorder = 0x1F;
 const ColorCodeFruitScore = 0x03;
+
+// flags for Game.freeze
+const FreezePrelude: u8 = (1 << 0);
+const FreezeReady: u8 = (1 << 1);
+const FreezeEatGhost: u8 = (1 << 2);
+const FreezeDead: u8 = (1 << 3);
+const FreezeWon: u8 = (1 << 4);
