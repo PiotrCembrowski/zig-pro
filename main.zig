@@ -87,3 +87,27 @@ const SpriteCodeGrapes = 5;
 const SpriteCodeGalaxian = 6;
 const SpriteCodeKey = 7;
 const SpriteCodePacmanClosedMouth = 48;
+
+// common color codes
+const ColorCodeBlank = 0x00;
+const ColorCodeDefault = 0x0F;
+const ColorCodeDot = 0x10;
+const ColorCodePacman = 0x09;
+const ColorCodeBlinky = 0x01;
+const ColorCodePinky = 0x03;
+const ColorCodeInky = 0x05;
+const ColorCodeClyde = 0x07;
+const ColorCodeFrightened = 0x11;
+const ColorCodeFrightenedBlinking = 0x12;
+const ColorCodeGhostScore = 0x18;
+const ColorCodeEyes = 0x19;
+const ColorCodeCherries = 0x14;
+const ColorCodeStrawberry = 0x0F;
+const ColorCodePeach = 0x15;
+const ColorCodeBell = 0x16;
+const ColorCodeApple = 0x14;
+const ColorCodeGrapes = 0x17;
+const ColorCodeGalaxian = 0x09;
+const ColorCodeKey = 0x16;
+const ColorCodeWhiteBorder = 0x1F;
+const ColorCodeFruitScore = 0x03;
