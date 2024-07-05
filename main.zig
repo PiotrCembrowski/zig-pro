@@ -55,3 +55,19 @@ const MaxVertices = ((DisplayTilesX * DisplayTilesY) + NumSprites + NumDebugMark
 const NumVoices = 3;
 const NumSounds = 3;
 const NumSamples = 128;
+
+// common tile codes
+const TileCodeSpace = 0x40;
+const TileCodeDot = 0x10;
+const TileCodePill = 0x14;
+const TileCodeGhost = 0xB0;
+const TileCodeLife = 0x20; // 0x20..0x23
+const TileCodeCherries = 0x90; // 0x90..0x93
+const TileCodeStrawberry = 0x94; // 0x94..0x97
+const TileCodePeach = 0x98; // 0x98..0x9B
+const TileCodeBell = 0x9C; // 0x9C..0x9F
+const TileCodeApple = 0xA0; // 0xA0..0xA3
+const TileCodeGrapes = 0xA4; // 0xA4..0xA7
+const TileCodeGalaxian = 0xA8; // 0xA8..0xAB
+const TileCodeKey = 0xAC; // 0xAC..0xAF
+const TileCodeDoor = 0xCF; // the ghost-house door
