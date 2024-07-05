@@ -1,5 +1,9 @@
-const std = @import("std");
-
-pub fn main() void {
-    std.log.info("pro dna", .{});
-}
+const assert = @import("std").debug.assert;
+const math = @import("std").math;
+const sokol = @import("sokol");
+const sg = sokol.gfx;
+const sapp = sokol.app;
+const sglue = sokol.glue;
+const saudio = sokol.audio;
+const slog = sokol.log;
+const shd = @import("shader.zig");

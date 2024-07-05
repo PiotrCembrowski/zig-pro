@@ -1,0 +1,4 @@
+.vscode/
+zig-*/
+.zig-*/
+emsdk/
