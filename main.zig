@@ -36,3 +36,17 @@ const PacmanEatenTicks = 60; // number of ticks the game freezes after Pacman ge
 const PacmanDeathTicks = 150; // number of ticks to show the Pacman death sequence before starting a new round
 const GameOverTicks = 3 * 60; // number of ticks to show the Game Over message
 const RoundWonTicks = 4 * 60; // number of ticks to wait after a round was won
+
+// rendering system constants
+const TileWidth = 8; // width/height of a background tile in pixels
+const TileHeight = 8;
+const SpriteWidth = 16; // width/height of a sprite in pixels
+const SpriteHeight = 16;
+const DisplayTilesX = 28; // display width/height in number of tiles
+const DisplayTilesY = 36;
+const DisplayPixelsX = DisplayTilesX * TileWidth;
+const DisplayPixelsY = DisplayTilesY * TileHeight;
+const TileTextureWidth = 256 * TileWidth;
+const TileTextureHeight = TileHeight + SpriteHeight;
+const NumSprites = 8;
+const MaxVertices = ((DisplayTilesX * DisplayTilesY) + NumSprites + NumDebugMarkers) * 6;
