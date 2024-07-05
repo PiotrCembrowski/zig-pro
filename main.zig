@@ -71,3 +71,19 @@ const TileCodeGrapes = 0xA4; // 0xA4..0xA7
 const TileCodeGalaxian = 0xA8; // 0xA8..0xAB
 const TileCodeKey = 0xAC; // 0xAC..0xAF
 const TileCodeDoor = 0xCF; // the ghost-house door
+
+// common sprite tile codes
+const SpriteCodeInvisible = 30;
+const SpriteCodeScore200 = 40;
+const SpriteCodeScore400 = 41;
+const SpriteCodeScore800 = 42;
+const SpriteCodeScore1600 = 43;
+const SpriteCodeCherries = 0;
+const SpriteCodeStrawberry = 1;
+const SpriteCodePeach = 2;
+const SpriteCodeBell = 3;
+const SpriteCodeApple = 4;
+const SpriteCodeGrapes = 5;
+const SpriteCodeGalaxian = 6;
+const SpriteCodeKey = 7;
+const SpriteCodePacmanClosedMouth = 48;
