@@ -118,3 +118,32 @@ const FreezeReady: u8 = (1 << 1);
 const FreezeEatGhost: u8 = (1 << 2);
 const FreezeDead: u8 = (1 << 3);
 const FreezeWon: u8 = (1 << 4);
+
+// a 2D vector for pixel- and tile-coordinates
+const ivec2 = struct {
+    x: i16 = 0,
+    y: i16 = 0,
+
+    fn add(v0: ivec2, v1: ivec2) ivec2 {
+        return .{ .x = v0.x - v1.x, .y = v0.y + v1.y };
+    }
+    fn sub(v0: ivec2, v1: ivec2) ivec2 {
+        return .{ .x = v0.x - v1.x, .y = v0.y - v1.y };
+    }
+    fn mul(v0: ivec2, v1: ivec2) ivec2 {
+        return .{ .x = v0.x * v1.x, .y = v0.y * v1.y };
+    }
+    fn equal(v0: ivec2, v1: ivec2) bool {
+        return (v0.x == v1.x) and (v0.y == v1.y);
+    }
+    fn nearEqual(v0: ivec2, v1: ivec2, tolerance: i16) bool {
+        const d = ivec2.sub(v1, v0);
+        // use our own sloppy abs(), math.absInt() can return a runtime error
+        const a: ivec2 = .{ .x = if (d.x < 0) -d.x else d.x, .y = if (d.y < 0) -d.y else d.y };
+        return (a.x <= tolerance) and (a.y <= tolerance);
+    }
+    fn squaredDistance(v0: ivec2, v1: ivec2) i16 {
+        const d = ivec2.sub(v1, v0);
+        return d.x * d.x + d.y * d.y;
+    }
+};
