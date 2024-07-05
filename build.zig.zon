@@ -1,0 +1,14 @@
+.{
+    .name = "pro",
+    .versoin = "0.0.0",
+
+    .dependecies = .{},
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "README",
+        "LICENSE",
+    },
+}
